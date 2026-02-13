@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hava Durumu Uygulaması</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!--body sayfanın görünen kısmı-->
+<body style="background-color: #4db2ec;" class="flex items-center justify-center min-h-screen">
+<div style="background-color: white;" 
+ class="bg-blue-200/60 rounded-2xl shadow-xl p-8 w-[380px] text-center hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105 backdrop-blur-md">
+    <h1 class="text-4xl font-bold text-blue-800 mb-6 drop-shadow-sm">🌤️ Hava Durumu</h1>
+    <input id="sehirInput" type="text" placeholder="Şehir adı girin..."
+           class="p-3 border border-blue-300 rounded-lg mb-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-400" />
+
+    <button onclick="havaDurumuGetir()"
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+      Hava Durumunu Göster
+    </button>
+
+   <div id="sonuc" class="mt-6 text-lg text-blue-900 text-center font-medium"></div>
+  </div>
+
+  <!-- Dışarıdan script dosyasını çağırıyoruz -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const apiKey = "437e0348110f6d8a8b7da17a01fcfd0b";
+const apiKey = "YOUR_API_KEY";
 
 // Hava durumu getiren ana fonksiyon
 async function havaDurumuGetir() {
